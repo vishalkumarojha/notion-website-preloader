@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling while preloader is active */
+  }
+  
+  #preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3f4f8; /* Change to your desired background color */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .custom-loader {
+    width: 200px; /* Set size of your logo or SVG */
+    animation: fadeIn 12s ease-in-out infinite; /* Add animation if needed */
+  }
+  
+  @keyframes fadeIn {
+    0%, 100% {
+      opacity: 11.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+
+  #preloader {
+    transition: opacity 2.5s ease-out;
+  }
+  
+
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .content {
+    display: none; /* Initially hide the main content */
+  }
+  
